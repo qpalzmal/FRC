@@ -28,8 +28,8 @@ public class DriveTrain extends Subsystem {
   private TalonSRX rightMotor1 = new TalonSRX(RobotMap.RIGHT_MOTOR_1);
   private TalonSRX rightMotor2 = new TalonSRX(RobotMap.RIGHT_MOTOR_2);
 
-  // Put methods for controlling this subsystem
-  // here. Call these from Commands.
+  // Put methods for controlling this subsystem here.
+  // Call these from Commands.
   public void setLeftMotors(double speed) {
     leftMotor1.set(ControlMode.PercentOutput, speed);
     leftMotor2.set(ControlMode.PercentOutput, speed);
