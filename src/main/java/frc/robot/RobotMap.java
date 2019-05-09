@@ -16,10 +16,6 @@ package frc.robot;
 
 // Values currently set to null will cause a compilation error
 public class RobotMap {
-  // For example to map the left and right motors, you could define the
-  // following variables to use with your drivetrain subsystem.
-  // public static int leftMotor = 1;
-  // public static int rightMotor = 2;
   // Ports for the motors - test the driver station
   public static final int LEFT_MOTOR_1 = null;
   public static final int LEFT_MOTOR_2 = null;
@@ -30,6 +26,7 @@ public class RobotMap {
   // Port that the controller will be connected to
   // Port will most likely be 0, 1, or 2 - check the driver station
   public static final int CONTROLLER_PORT = 0;
+  
   // The axis of controller sticks - test controller in driver station
   // public static final int LEFT_STICK_CONTROLLER_X_AXIS = null;
   public static final int LEFT_STICK_CONTROLLER_Y_AXIS = null;
