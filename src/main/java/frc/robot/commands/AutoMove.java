@@ -17,15 +17,25 @@ public class AutoMove extends TimedCommand {
   /**
    * Add your docs here.
    */
-  public AutoMove(double timeout) {
+
+  private double time;
+  private double leftSpeed;
+  private double rightSpeed;
+
+  public AutoMove(double timeout, double initLeftSpeed, double initRightSpeed) {
     super(timeout);
-    // Use requires() here to declare subsystem dependencies
-    // eg. requires(chassis);
+    time = timeout;
+    leftSpeed = initLeftSpeed;
+    rightSpeed = initRightSpeed;
+    requires(Robot.driveTrain);
   }
 
   // Called just before this Command runs the first time
   @Override
   protected void initialize() {
+    Robot.driveTrain.setLeftMotors(leftSpeed);
+    Robot.driveTrain.setRightMotors(rightSpeed);
+    setTimeout(time);
   }
 
   // Called repeatedly when this Command is scheduled to run

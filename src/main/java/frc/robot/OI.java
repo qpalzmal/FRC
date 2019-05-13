@@ -8,13 +8,21 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.XboxController;
+import edu.wpi.first.wpilibj.buttons.Button;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
+import frc.robot.commands.AutoMove;
 
 /**
  * This class is the glue that binds the controls on the physical operator
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
+  public OI () {
+    xButton.whenPressed(new AutoMove(1, 0.5 , 0.5));
+  }
+
   private XboxController driveController = new XboxController(RobotMap.CONTROLLER_PORT);  
+  Button xButton = new JoystickButton(driveController, RobotMap.CONTROLLER_X_BUTTON);
 
   public double getControllerAxis (int axis) {
     return driveController.getRawAxis(axis);

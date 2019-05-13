@@ -13,9 +13,6 @@ import frc.robot.RobotMap;
 
 public class DriveControls extends Command {
   public DriveControls() {
-    // Use requires() here to declare subsystem dependencies
-    // Must refer to the instance of the subsystem dependency
-    // eg. requires(chassis);
     requires(Robot.driveTrain);
   }
 
@@ -29,12 +26,12 @@ public class DriveControls extends Command {
   protected void execute() {
         // The signs may need to be switched - requires physical testing
     // Controls for driving the drivetrain - using left stick on controller
-    double leftStickY = Robot.m_oi.getControllerAxis(RobotMap.LEFT_STICK_CONTROLLER_Y_AXIS);
+    double leftStickY = Robot.m_oi.getControllerAxis(RobotMap.CONTROLLER_LEFT_STICK_Y_AXIS);
     Robot.driveTrain.setLeftMotors(leftStickY);
     Robot.driveTrain.setRightMotors(leftStickY); 
 
     // Controls for turning the drivetrain - using right stick on controller
-    double rightStickX = Robot.m_oi.getControllerAxis(RobotMap.RIGHT_STICK_CONTROLLER_X_AXIS);
+    double rightStickX = Robot.m_oi.getControllerAxis(RobotMap.CONTROLLER_RIGHT_STICK_X_AXIS);
     Robot.driveTrain.setLeftMotors(-rightStickX);
     Robot.driveTrain.setRightMotors(rightStickX);
   }

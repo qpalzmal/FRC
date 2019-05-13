@@ -28,11 +28,13 @@ public class RobotMap {
   public static final int CONTROLLER_PORT = 0;
 
   // The axis of controller sticks - test controller in driver station
-  // public static final int LEFT_STICK_CONTROLLER_X_AXIS = -1;
-  public static final int LEFT_STICK_CONTROLLER_Y_AXIS = -1;
+  // public static final int CONTROLLER_LEFT_STICK_X_AXIS = -1;
+  public static final int CONTROLLER_LEFT_STICK_Y_AXIS = -1;
+  public static final int CONTROLLER_RIGHT_STICK_X_AXIS = -1;
+  // public static final int CONTROLLER_RIGHT_STICK_Y_AXIS = -1;
 
-  public static final int RIGHT_STICK_CONTROLLER_X_AXIS = -1;
-  // public static final int RIGHT_STICK_CONTROLLER_Y_AXIS = -1;
+  // Button numbers of the controller - test controller in driver station
+  public static final int CONTROLLER_X_BUTTON = -1;
 
   // If you are using multiple modules, make sure to define both the port
   // number and the module. For example you with a rangefinder:
