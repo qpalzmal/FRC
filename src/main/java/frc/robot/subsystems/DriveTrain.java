@@ -11,7 +11,7 @@ import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.robot.RobotMap;
-import frc.robot.commands.BasicDrive;
+import frc.robot.commands.DriveControls;
 
 /**
  * Add your docs here.
@@ -43,6 +43,6 @@ public class DriveTrain extends Subsystem {
   @Override
   public void initDefaultCommand() {
     // Set the default command for a subsystem here.
-    setDefaultCommand(new BasicDrive());
+    setDefaultCommand(new DriveControls());
   }
 }

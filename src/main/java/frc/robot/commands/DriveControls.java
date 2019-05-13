@@ -10,10 +10,9 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 import frc.robot.RobotMap;
-import frc.robot.subsystems.*;
 
-public class BasicDrive extends Command {
-  public BasicDrive() {
+public class DriveControls extends Command {
+  public DriveControls() {
     // Use requires() here to declare subsystem dependencies
     // Must refer to the instance of the subsystem dependency
     // eg. requires(chassis);

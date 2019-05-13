@@ -14,25 +14,25 @@ package frc.robot;
  * floating around.
  */
 
-// Values currently set to null will cause a compilation error
+// Values currently set to -1 are placeholder values - insert the correct one
 public class RobotMap {
   // Ports for the motors - test the driver station
-  public static final int LEFT_MOTOR_1 = null;
-  public static final int LEFT_MOTOR_2 = null;
-	public static final int RIGHT_MOTOR_1 = null;
-  public static final int RIGHT_MOTOR_2 = null;
+  public static final int LEFT_MOTOR_1 = -1;
+  public static final int LEFT_MOTOR_2 = -1;
+	public static final int RIGHT_MOTOR_1 = -1;
+  public static final int RIGHT_MOTOR_2 = -1;
   
 
   // Port that the controller will be connected to
   // Port will most likely be 0, 1, or 2 - check the driver station
   public static final int CONTROLLER_PORT = 0;
-  
-  // The axis of controller sticks - test controller in driver station
-  // public static final int LEFT_STICK_CONTROLLER_X_AXIS = null;
-  public static final int LEFT_STICK_CONTROLLER_Y_AXIS = null;
 
-  public static final int RIGHT_STICK_CONTROLLER_X_AXIS = null;
-  // public static final int RIGHT_STICK_CONTROLLER_Y_AXIS = null;
+  // The axis of controller sticks - test controller in driver station
+  // public static final int LEFT_STICK_CONTROLLER_X_AXIS = -1;
+  public static final int LEFT_STICK_CONTROLLER_Y_AXIS = -1;
+
+  public static final int RIGHT_STICK_CONTROLLER_X_AXIS = -1;
+  // public static final int RIGHT_STICK_CONTROLLER_Y_AXIS = -1;
 
   // If you are using multiple modules, make sure to define both the port
   // number and the module. For example you with a rangefinder:
