@@ -19,7 +19,7 @@ public class RobotMap {
   // Ports for the motors - test the driver station
   public static final int LEFT_MOTOR_1 = -1;
   public static final int LEFT_MOTOR_2 = -1;
-	public static final int RIGHT_MOTOR_1 = -1;
+  public static final int RIGHT_MOTOR_1 = -1;
   public static final int RIGHT_MOTOR_2 = -1;
   
 
